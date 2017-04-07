@@ -6,6 +6,597 @@
       <sld:Name>Default Styler</sld:Name>
       <sld:Title/>
       <sld:FeatureTypeStyle>
+        <sld:Name>roads-text-name</sld:Name>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>proposed</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>construction</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>proposed</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>construction</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>unclassified</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>residential</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="repeat">300</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">10.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>0</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>secondary</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">10.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FED7A5</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>tertiary</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>unclassified</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>residential</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="repeat">400</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">8.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>0</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>secondary</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">8.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FED7A5</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>0</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>secondary</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FED7A5</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>unclassified</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>residential</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">8.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="repeat">300</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>tertiary</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </sld:Label>
+            <sld:Font>
+              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-style">normal</sld:CssParameter>
+              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
+            </sld:Font>
+            <sld:LabelPlacement>
+              <sld:LinePlacement>
+                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+              </sld:LinePlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>1</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#000000</sld:CssParameter>
+            </sld:Fill>
+            <sld:VendorOption name="followLine">True</sld:VendorOption>
+            <sld:VendorOption name="group">False</sld:VendorOption>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+      <sld:FeatureTypeStyle>
         <sld:Name>roads</sld:Name>
         <sld:Rule>
           <ogc:Filter>
@@ -617,594 +1208,1649 @@
         </sld:Rule>
       </sld:FeatureTypeStyle>
       <sld:FeatureTypeStyle>
-        <sld:Name>roads-text-name</sld:Name>
+        <sld:Name>minor-roads-casing</sld:Name>
         <sld:Rule>
           <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>proposed</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>construction</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>raceway</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFC0CB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
-            <ogc:Or>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>proposed</ogc:Literal>
+                <ogc:Literal>motorway_link</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>construction</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
           </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
-            <ogc:Or>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>unclassified</ogc:Literal>
+                <ogc:Literal>trunk_link</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>residential</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
           </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="repeat">300</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
-            <ogc:Or>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
+                <ogc:Literal>primary_link</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">10.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>0</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>secondary</ogc:Literal>
+              <ogc:Literal>raceway</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">10.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FED7A5</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFC0CB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>motorway_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>tertiary</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>unclassified</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>residential</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="repeat">400</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">8.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>0</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>secondary</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">8.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FED7A5</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>0</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>secondary</ogc:Literal>
+              <ogc:Literal>raceway</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FED7A5</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFC0CB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
-            <ogc:Or>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>unclassified</ogc:Literal>
+                <ogc:Literal>motorway_link</ogc:Literal>
               </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">4.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>residential</ogc:Literal>
+                <ogc:Literal>trunk_link</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">8.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>motorway_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">8.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary_link</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+      <sld:FeatureTypeStyle>
+        <sld:Name>minor-roads-casing</sld:Name>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>service</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>INT-minor</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>yes</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+              </ogc:Not>
+            </ogc:And>
           </ogc:Filter>
           <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">8.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="repeat">300</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>service</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>yes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>motorway</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>service</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>INT-minor</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>yes</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>service</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>yes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.0</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>service</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>INT-minor</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">9.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>yes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">9.0</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>residential</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>unclassified</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>road</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>tertiary</ogc:Literal>
+              <ogc:Literal>living_street</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">9.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>motorway</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">13.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:Or>
+                  <ogc:Or>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                      <ogc:Literal>tertiary</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                      <ogc:Literal>residential</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>unclassified</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>road</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>living_street</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">14.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>motorway</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">8.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>residential</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>unclassified</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>road</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>yes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.0</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>residential</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>unclassified</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>road</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">4.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.6</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>yes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.6</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>living_street</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>living_street</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:Or>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>residential</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                    <ogc:Literal>unclassified</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>road</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">8.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>pedestrian</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>yes</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6.5</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>osm_tag</ogc:PropertyName>
+              <ogc:Literal>living_street</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>motorway</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
           <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
           <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:TextSymbolizer>
-            <sld:Label>
-              <ogc:PropertyName>name</ogc:PropertyName>
-            </sld:Label>
-            <sld:Font>
-              <sld:CssParameter name="font-family">DejaVu Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
-              <sld:CssParameter name="font-style">normal</sld:CssParameter>
-              <sld:CssParameter name="font-weight">normal</sld:CssParameter>
-            </sld:Font>
-            <sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>
-            <sld:Halo>
-              <sld:Radius>1</sld:Radius>
-              <sld:Fill>
-                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              </sld:Fill>
-            </sld:Halo>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#000000</sld:CssParameter>
-            </sld:Fill>
-            <sld:VendorOption name="followLine">True</sld:VendorOption>
-            <sld:VendorOption name="group">False</sld:VendorOption>
-          </sld:TextSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">10.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>trunk</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>primary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>secondary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                <ogc:Literal>tertiary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
+                  <ogc:Literal>yes</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Not>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
         </sld:Rule>
       </sld:FeatureTypeStyle>
       <sld:FeatureTypeStyle>
@@ -1724,7 +3370,7 @@
         </sld:Rule>
       </sld:FeatureTypeStyle>
       <sld:FeatureTypeStyle>
-        <sld:Name>name</sld:Name>
+        <sld:Name>minor-roads-fill</sld:Name>
         <sld:Rule>
           <ogc:Filter>
             <ogc:And>
@@ -4707,1652 +6353,6 @@
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
               <sld:CssParameter name="stroke-width">9.4</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-      </sld:FeatureTypeStyle>
-      <sld:FeatureTypeStyle>
-        <sld:Name>minor-roads-casing</sld:Name>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>raceway</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFC0CB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.2</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>raceway</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFC0CB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>raceway</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFC0CB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">4.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">8.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">8.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary_link</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-      </sld:FeatureTypeStyle>
-      <sld:FeatureTypeStyle>
-        <sld:Name>minor-roads-casing</sld:Name>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>service</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>INT-minor</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>yes</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>service</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>yes</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>service</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>INT-minor</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>yes</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>service</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>yes</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.0</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>service</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>INT-minor</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">9.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>yes</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">9.0</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>residential</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>unclassified</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>road</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>living_street</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">9.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">13.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:Or>
-                  <ogc:Or>
-                    <ogc:PropertyIsEqualTo>
-                      <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                      <ogc:Literal>tertiary</ogc:Literal>
-                    </ogc:PropertyIsEqualTo>
-                    <ogc:PropertyIsEqualTo>
-                      <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                      <ogc:Literal>residential</ogc:Literal>
-                    </ogc:PropertyIsEqualTo>
-                  </ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>unclassified</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>road</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">16.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>living_street</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">14.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">8.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>residential</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>unclassified</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>road</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>yes</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.0</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">7.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>residential</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>unclassified</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>road</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#999999</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">4.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.6</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>yes</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.6</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>living_street</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>25000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">4.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>living_street</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">2.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:Or>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>residential</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                    <ogc:Literal>unclassified</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>road</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">8.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>pedestrian</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>yes</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#545454</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6.5</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>osm_tag</ogc:PropertyName>
-              <ogc:Literal>living_street</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>12500.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>motorway</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#506077</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">10.0</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>trunk</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#477147</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>primary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#8D4346</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>secondary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#A37B48</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                <ogc:Literal>tertiary</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osm_tag</ogc:PropertyName>
-                  <ogc:Literal>yes</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>25000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#BBBBBB</sld:CssParameter>
-              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">11.0</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>
