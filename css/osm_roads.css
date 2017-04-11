@@ -1,0 +1,117 @@
+lines {
+	halo-radius: 2px;
+	halo-color: white;
+	-gt-label-follow-line: true;
+	label-anchor: 0.5 0.5;
+}
+
+lines ['motorway' = highway] {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-opacity: 0.5;
+}
+
+lines [@scale < 1000000] ['motorway_link' = highway], lines [@scale < 1000000] ['motorway' = highway] {
+  stroke: black, white;
+  stroke-width: 3px, 1px;
+  stroke-opacity: 0.5;
+}
+
+lines [@scale < 1000000] ['primary' = highway] {
+    stroke-opacity: 0.5;
+    stroke: #006600;
+}
+
+lines [@scale < 500000] ['secondary' = highway] {
+    stroke-opacity: 0.4;
+    stroke: #006633;
+}
+
+lines [@scale < 500000] ['tertiary' = highway] {
+    stroke-opacity: 0.3;
+    stroke: #006666;
+}
+
+lines [@scale < 200000] ['trunk' = highway] {
+	label: [name];
+	stroke: brown, white;
+	stroke-width: 3px, 1px;
+	stroke-opacity: 0.5;
+}
+
+lines [@scale < 200000] {
+  ['motorway_link' = highway], ['motorway' = highway] {
+    label: [name];
+    stroke-width: 2;
+  }
+}
+
+lines [@scale < 100000] ['primary' = highway] {
+    label: [name];
+}
+
+lines [@scale < 100000] ['motorway_link' = highway] {
+	stroke: black, #ff6600;
+	stroke-width: 5px, 3px;
+}
+
+lines [@scale < 100000] ['motorway' = highway] {
+	stroke: black, #ff6600;
+	stroke-width: 5px, 3px;
+}
+
+lines [@scale < 35000] {
+  ['primary' = highway] {
+    stroke-width: 3;
+  }
+}
+
+lines [@scale < 35000] ['residential' = highway] {
+	stroke-width: 1px;
+	stroke: #666699;
+}
+
+lines [@scale < 20000] ['secondary' = highway] {
+	label: [name];
+}
+
+lines [@scale < 10000] ['tertiary' = highway] {
+	label: [name];
+}
+
+lines [@scale < 20000] ['residential' = highway] {
+	label: [name];
+	stroke-width: 3px;
+	stroke: #666699;
+}
+
+lines [@scale < 20000] ['service' = highway] {
+	stroke: white, black;
+	stroke-width: 5px, 1px;
+	stroke-dasharray: 5 5;
+}
+
+lines [@scale < 10000] ['tertiary' = highway] {
+	label: [name];
+	stroke-width: 3px;
+}
+
+lines [@scale < 10000] ['footway' = highway],
+lines [@scale < 10000] ['path' = highway] 
+{
+    stroke-width: 0.5;
+    stroke: brown;
+    stroke-dasharray: 5 5;
+}
+
+lines [@scale < 5000] ['footway' = highway],
+lines [@scale < 5000] ['path' = highway] 
+{
+	label: [name];
+}
+
+lines [@scale < 5000] ['service' = highway] {
+	label: [name];
+	stroke: #333333, white;
+	stroke-width: 5px, 1px;
+}

@@ -1,0 +1,101 @@
+multipolygons {
+	halo-radius: 2px;
+	halo-color: white;
+	label-anchor: 0.5 0.5;
+}
+
+multipolygons [@scale > 100000] [@scale < 5000000] ['water' = natural] {
+	fill: #000066;
+	fill-opacity: 0.2;
+}
+
+multipolygons [@scale > 100000] [@scale < 5000000] ['national_park' = boundary] {
+	label: [name];
+	fill: #00cc00;
+	fill-opacity: 0.2;
+}
+
+multipolygons [@scale > 5000000] ['administrative' = boundary] [admin_level = 4] {
+	label: [name];
+	fill: #999999;
+	fill-opacity: 0.2;
+}
+
+multipolygons [@scale > 100000] [@scale < 5000000] ['administrative' = boundary] [admin_level = 8] {
+	label: [name];
+	fill: #999999;
+	fill-opacity: 0.2;
+}
+
+multipolygons [@scale > 100000] [@scale < 5000000] ['park' = leisure] {
+	label: [name];
+	fill: #006600;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale > 5000] [@scale < 100000] ['water' = natural] {
+	label: [name];
+	fill: #000099;
+	fill-opacity: 0.1;
+}
+
+multipolygons [@scale < 20000] ['boundary' <> type] {
+	label: [name];
+	fill: #111111;
+	fill-opacity: 0.1;
+}
+
+multipolygons [@scale < 20000] ['' < landuse] {
+	label: [name];
+	fill: #ff9999;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['garden' = landuse] {
+	label: [name];
+	fill: #333300;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['camp_site' = landuse] {
+	label: [name];
+	fill: #333300;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['museum' = landuse] {
+	label: [name];
+	fill: #333300;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['picnic_site' = landuse] {
+	label: [name];
+	fill: #333300;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['information' = landuse] {
+	label: [name];
+	fill: #333300;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['grass' = landuse] {
+	label: [name];
+	fill: #003300;
+	fill-opacity: 0.5;
+}
+
+multipolygons [@scale < 5000] ['residential' = landuse] {
+	label: [name];
+	fill: #ff33ff;
+	fill-opacity: 0.1;
+}
+
+multipolygons [@scale < 50000] ['hotel' = building] {
+	label: [name];
+	fill: #333300;
+	fill-opacity: 0.5;
+}
+

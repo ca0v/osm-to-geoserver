@@ -1,0 +1,26 @@
+points {
+	halo-radius: 2px;
+	halo-color: white;
+	label-anchor: 0.5 0;
+	label-offset: 0 8px;
+}
+
+points [@scale > 5000000] ['state' = place] {
+	label: [name];
+}
+
+points [@scale < 100000] {
+	mark: symbol(circle);
+	mark-size: 1px;
+}
+
+points [@scale < 20000] {
+	mark: symbol(circle);
+	mark-size: 5px;
+}
+
+points [@scale < 10000] {
+	mark-size: 5px;
+	label-offset: 0 8px;
+	label: [name];
+}
